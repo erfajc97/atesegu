@@ -1,0 +1,49 @@
+---
+import BgHeroSvg from "../../../assets/svg/BgHeroSvg.astro";
+import NavBar from "../../../components/NavBar.astro";
+import FamiliaSvg from "../../../assets/svg/FamiliaSvg.astro";
+---
+
+<section
+  class="bg-gradient-to-r from-[#00A8E8] via-[#25516D] from-2% to-[#25516D] text-white lg:rounded-tl-[350px] lg:rounded-br-[350px] pt-10 lg:px-16 px-5 relative"
+>
+  <img
+    class="absolute top-1 right-1 lg:left-1"
+    src="/img-png/logoats.png"
+    alt="logo"
+  />
+  <NavBar />
+  <div class="flex flex-col lg:flex-row items-center justify-center">
+    <div class="md:w-1/2 z-10 mt-8 lg:ml-14 flex flex-col gap-y-6">
+      <p class="text-3xl font-medium mb-4">Somos Atesegu Seguros</p>
+      <h1 class="text-xl md:text-6xl font-bold mb-4 leading-tight">
+        La Cobertura que Mereces, <br />
+        la Confianza que Buscas
+      </h1>
+      <p class="text-base md:text-2xl mb-6 max-w-[700px]">
+        Protegiendo tu bienestar con seguros a medida para cada etapa de la
+        vida. Contamos con coberturas diseñadas para ofrecerte seguridad y
+        tranquilidad.
+      </p>
+      <button
+        class="bg-gradient-to-r from-[#ffffff] from-10% to-[#999999] text-black px-4 py-2 rounded-md max-w-[250px] font-bold shadow-lg btn btn-outline border-none hover:text-black"
+      >
+        Conoce Más
+      </button>
+    </div>
+    <div class="md:w-1/2 z-10 mt-8 flex justify-center">
+      <div class="relative">
+        <div class="absolute top-5 left-0 lg:left-1 lg:top-6">
+          <FamiliaSvg />
+        </div>
+        <!-- <img
+          class="absolute top-0 left-5 lg:left-14 object-contain w-[300px] h-[390px] lg:w-[480px] lg:h-[600px]"
+          src="/img-png/familyhero.png"
+          alt="hero-img"
+        /> -->
+
+        <BgHeroSvg />
+      </div>
+    </div>
+  </div>
+</section>
