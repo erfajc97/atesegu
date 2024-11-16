@@ -1,11 +1,10 @@
 ---
 import BgHeroSvg from "../../../assets/svg/BgHeroSvg.astro";
 import NavBar from "../../../components/NavBar.astro";
-import FamiliaSvg from "../../../assets/svg/FamiliaSvg.astro";
 ---
 
 <section
-  class="bg-gradient-to-r from-[#00A8E8] via-[#25516D] from-2% to-[#25516D] text-white lg:rounded-tl-[350px] lg:rounded-br-[350px] pt-10 lg:px-16 px-5 relative"
+  class="bg-gradient-to-r from-[#00A8E8] via-[#25516D] from-2% to-[#25516D] text-white lg:rounded-tl-[350px] lg:rounded-br-[350px] pt-2 lg:px-16 px-5 relative"
 >
   <img
     class="absolute top-1 right-1 lg:left-1"
@@ -13,10 +12,10 @@ import FamiliaSvg from "../../../assets/svg/FamiliaSvg.astro";
     alt="logo"
   />
   <NavBar />
-  <div class="flex flex-col lg:flex-row items-center justify-center">
-    <div class="md:w-1/2 z-10 mt-8 lg:ml-14 flex flex-col gap-y-6">
+  <div class="flex flex-col lg:flex-row items-start justify-center">
+    <div class="md:w-1/2 z-10 mt-10 lg:mt-0 lg:ml-14 lg:pt-10 flex flex-col lg:gap-y-4 gap-y-2">
       <p class="text-3xl font-medium mb-4">Somos Atesegu Seguros</p>
-      <h1 class="text-xl md:text-6xl font-bold mb-4 leading-tight">
+      <h1 class="text-xl md:text-5xl font-bold mb-4 leading-tight">
         La Cobertura que Mereces, <br />
         la Confianza que Buscas
       </h1>
@@ -31,17 +30,11 @@ import FamiliaSvg from "../../../assets/svg/FamiliaSvg.astro";
         Conoce Más
       </button>
     </div>
-    <div class="md:w-1/2 z-10 mt-8 flex justify-center">
+    <div class="md:w-1/2 z-10 lg:mt-2 flex justify-center">
       <div class="relative">
-        <div class="absolute top-5 left-0 lg:left-1 lg:top-6">
-          <FamiliaSvg />
+        <div class="absolute bottom-0 left-14 lg:left-24 lg:top-6">
+          <img class="lg:w-[350px] lg:h-[505px] w-[250px] h-[350px]" src="/img-png/familyhero.png" alt="logo" />
         </div>
-        <!-- <img
-          class="absolute top-0 left-5 lg:left-14 object-contain w-[300px] h-[390px] lg:w-[480px] lg:h-[600px]"
-          src="/img-png/familyhero.png"
-          alt="hero-img"
-        /> -->
-
         <BgHeroSvg />
       </div>
     </div>

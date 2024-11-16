@@ -1,5 +1,17 @@
 ---
+import FAQsAccordion from "./components/FAQsAccordion.tsx";
 import Hero from "./components/Hero.astro";
+import Partners from "./components/Partners.astro";
+import TypesOfInsurance from "./components/TypesOfInsurance.astro";
+import TermsAccordion from "./components/TermsAccordion.tsx";
+import Contacts from "../contacts/Contats.astro";
 ---
 
 <Hero />
+<Partners />
+<TypesOfInsurance />
+<FAQsAccordion client:load />
+<div class="bg-[#F3F3F3] w-full lg:p-5 p-2">
+  <TermsAccordion client:load />
+</div>
+<Contacts />
