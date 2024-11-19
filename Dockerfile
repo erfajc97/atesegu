@@ -1,34 +1,32 @@
-# Etapa 1: Construcción del proyecto
+# Etapa 1: Construcción
 FROM node:18-alpine AS builder
 
-# Establece el directorio de trabajo
+# Configuración del directorio de trabajo
 WORKDIR /app
 
-# Copia los archivos necesarios al contenedor
+# Copiar los archivos del proyecto al contenedor
 COPY . .
 
-# Instala pnpm
+# Instalar pnpm y las dependencias del proyecto
 RUN npm install -g pnpm
-
-# Instala las dependencias del proyecto
 RUN pnpm install --frozen-lockfile
 
-# Construye el proyecto Astro (incluyendo React)
+# Construir el proyecto Astro
 RUN pnpm build
 
-# Etapa 2: Servidor de producción
+# Etapa 2: Producción
 FROM node:18-alpine
 
-# Establece el directorio de trabajo
+# Configuración del directorio de trabajo
 WORKDIR /app
 
-# Copia los archivos del proyecto y los archivos generados
-COPY --from=builder /app .
+# Copiar los archivos generados y necesarios para producción
+COPY --from=builder /app /app
 
-# Instala solo las dependencias necesarias para producción
+# Instalar solo las dependencias necesarias para producción
 RUN pnpm install --prod --frozen-lockfile
 
-# Expone el puerto en el que se ejecutará el servidor
+# Exponer el puerto del servidor Astro
 EXPOSE 3000
 
 # Comando para iniciar el servidor Astro

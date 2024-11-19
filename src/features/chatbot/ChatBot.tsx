@@ -14,27 +14,23 @@ const Chatbot: React.FC = () => {
 
   useEffect(() => {
     // Conectar al servidor de Socket.IO
-    const newSocket = io("https://ats.shepwashi.com/");
+    const newSocket = io("https://atsbot.shepwashi.com/");
     setSocket(newSocket);
 
     // Manejar las respuestas del servidor
-    newSocket.on(
-      "response",
-      (data: { error?: string; user_input?: string; response?: string }) => {
-        if (data.error) {
-          setMessages((prev) => [
-            ...prev,
-            { type: "error", text: data.error || "Unknown error" },
-          ]);
-        } else if (data.user_input && data.response) {
-          setMessages((prev) => [
-            ...prev,
-            { type: "user", text: data.user_input || "" },
-            { type: "bot", text: data.response || "" },
-          ]);
-        }
+    newSocket.on("response", (data: { error?: string; response?: string }) => {
+      if (data.error) {
+        setMessages((prev) => [
+          ...prev,
+          { type: "error", text: data.error || "Unknown error" },
+        ]);
+      } else if (data.response) {
+        setMessages((prev) => [
+          ...prev,
+          { type: "bot", text: data.response || "" },
+        ]);
       }
-    );
+    });
 
     // Desconectar el socket al desmontar el componente
     return () => {
@@ -44,9 +40,14 @@ const Chatbot: React.FC = () => {
 
   const handleSend = () => {
     if (userInput.trim() && socket) {
-      socket.emit("message", { user_input: userInput }); // Enviar mensaje al servidor
-      setMessages((prev) => [...prev, { type: "user", text: userInput }]); // Actualizar mensajes
-      setUserInput(""); // Limpiar la entrada
+      // Agregar el mensaje del usuario
+      setMessages((prev) => [...prev, { type: "user", text: userInput }]);
+
+      // Enviar mensaje al servidor
+      socket.emit("message", { user_input: userInput });
+
+      // Limpiar la entrada
+      setUserInput("");
     }
   };
 
@@ -80,7 +81,10 @@ const Chatbot: React.FC = () => {
                   </p>
                 )}
                 {message.type === "bot" && (
-                  <p className="text-left text-gray-700">Bot: {message.text}</p>
+                  <p className="text-left text-blue-600">
+                    AtsBot:
+                    <span className="text-black"> {message.text}</span>
+                  </p>
                 )}
                 {message.type === "error" && (
                   <p className="text-red-500">Error: {message.text}</p>
