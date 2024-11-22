@@ -9,11 +9,11 @@ const FAQsAccordion = () => {
   };
 
   return (
-    <section className="bg-white mt-5 lg:mt-10 lg:w-[70%] px-5 mx-auto">
+    <section className=" mt-5 lg:mt-10 lg:w-[70%] px-5 mx-auto">
       <h2 className="text-center text-[#303A42] lg:text-4xl text-3xl font-bold">
         FAQs (Preguntas frecuentes)
       </h2>
-      <div className="lg:mt-10 mt-5 grid grid-cols-2 lg:gap-4  lg:px-5 px-2 ">
+      <div className="lg:mt-10 mt-5 grid grid-cols-1 lg:gap-4  lg:px-5 px-2 ">
         {faqs.map((faq) => (
           <div
             key={faq.id}

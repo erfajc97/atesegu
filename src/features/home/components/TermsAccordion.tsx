@@ -13,7 +13,7 @@ const TermsAccordion = () => {
       <h2 className="text-center text-[#303A42] lg:text-4xl text-3xl font-bold">
         Glosario (Terminos frecuentes)
       </h2>
-      <div className="lg:mt-10 mt-5 grid grid-cols-2 lg:gap-4  lg:px-5 px-2 ">
+      <div className="lg:mt-10 mt-5 grid grid-cols-1lg:gap-4  lg:px-5 px-2 ">
         {terms.map((term) => (
           <div
             key={term.id}

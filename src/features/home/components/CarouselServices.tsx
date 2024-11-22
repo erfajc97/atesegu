@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { imgsSlide1, imgsSlide2, imgsSlide3 } from "../data.ts";
 
 const slides = [
@@ -10,6 +10,14 @@ const slides = [
 const CarouselServices = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   const handleNextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
@@ -18,7 +26,6 @@ const CarouselServices = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  // console.log(imgsSlide1.titleBanner);
   return (
     <div className="carousel w-full lg:mt-10 mt-5">
       <div className="carousel-item relative w-full">
@@ -34,7 +41,7 @@ const CarouselServices = () => {
             className="w-full lg:h-[350px] h-[150px]"
             alt="Banner Seguros Individuales"
           />
-          <div className="absolute lg:top-16 top-[2%] flex flex-row-reverse lg:flex-row items-center gap-x-4 lg:left-[10%] left-[5%] px-5">
+          <div className="absolute lg:top-[7%] top-[2%] flex flex-row-reverse lg:flex-row items-center gap-x-4 lg:left-[3%] left-[5%] px-10">
             <img
               src="/img-png/logofamily.png"
               alt="logo"

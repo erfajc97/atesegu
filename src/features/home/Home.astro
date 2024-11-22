@@ -11,8 +11,10 @@ import Chatbot from "../chatbot/ChatBot";
 <Hero />
 <Partners />
 <TypesOfInsurance />
-<FAQsAccordion client:load />
-<div class="bg-[#F3F3F3] w-full lg:p-5 p-2">
+<div
+  class="flex flex-col lg:flex-row gap-x-5 bg-[#F3F3F3] lg:px-40 lg:mt-10 mt-5"
+>
+  <FAQsAccordion client:load />
   <TermsAccordion client:load />
 </div>
 <Contacts />

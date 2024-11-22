@@ -2,47 +2,51 @@
 import { logosPartners } from "../data";
 ---
 
-<div class="lg:px-28 px-5 lg:py-14 py-5">
+<div class="lg:px-40 px-5 lg:py-14 py-5 mt-10">
   <h2 class="lg:text-4xl text-2xl font-bold text-[#25516D]">
     Contamos con el respaldo de nuestros aliados
   </h2>
-  <div class="flex flex-wrap items-center justify-between lg:mt-14 mt-5 gap-y-5 -ml-3 px-5">
+  <div
+    class="flex flex-wrap items-center justify-between lg:mt-14 my-10 gap-y-5 -ml-3 px-5"
+  >
     {
       logosPartners.map((logo) => (
         <img
-          class="lg:w-[300px] lg:h-[80px] w-[150px] h-[40px] "
+          class={`lg:w-[300px] lg:h-[80px] w-[150px] h-[40px] ${logo.alt === "Chubb" && "w-[150px] h-[40px] lg:w-[300px] lg:h-[60px]"}`}
           src={logo.src}
           alt={logo.alt}
         />
       ))
     }
   </div>
-  <h2 class="lg:text-4xl text-2xl font-bold text-[#25516D] lg:mt-14 mt-5">
+  <h2 class="lg:text-4xl text-2xl font-bold text-[#25516D] lg:mt-28 mt-5">
     Acerca de Atesegu
   </h2>
-  <div class="flex flex-col lg:flex-row items-center gap-y-5 justify-center">
+  <div class="flex flex-col lg:flex-row items-center gap-10 justify-center">
     <div class="flex-1">
       <div class="">
         <img
-          class="lg:w-[650px] lg:h-[400px] w-[350px] h-[250px] rounded-2xl mt-5 shadow-xl"
+          class="lg:w-[650px] lg:h-[450px] w-[350px] h-[250px] rounded-2xl mt-5 shadow-xl"
           src="/img-png/aboutats.png"
           alt="logo"
         />
       </div>
     </div>
     <div class="flex-1">
-      <p class="lg:text-[21px] text-[14px] flex flex-col gap-y-4">
-        Atesegu es una firma de bróker con 41 años de sólida presencia en
-        Ecuador. La destacada trayectoria internacional de nuestros
-        profesionales en los campos de seguros, reaseguros, marketing y finanzas
-        nos permite brindar al mercado ecuatoriano un asesoramiento integral de
-        primer nivel.
+      <p
+        class="lg:text-[25px] text-[16px] text-justify flex flex-col gap-y-4 font-bold px-5"
+      >
+        Somos atesegu sus asesores de seguros tu firma de bróker con 41 años de
+        sólida presencia en Ecuador. La destacada trayectoria internacional de
+        nuestros profesionales en los campos de seguros, reaseguros, marketing y
+        finanzas nos permite brindar al mercado ecuatoriano un asesoramiento
+        integral de primer nivel.
 
         <span>
           Nos comprometemos a ofrecer soluciones personalizadas que no solo
           satisfacen las necesidades y expectativas de nuestros clientes, sino
           que también permiten a las aseguradoras implementar los mecanismos más
-          adecuados para garantizar la protección requerida por los asegurados
+          adecuados para garantizar la protección requerida por los asegurados.
         </span>
         <span>
           Todo ello bajo los más altos estándares de transparencia, innovación y
