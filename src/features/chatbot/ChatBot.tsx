@@ -130,12 +130,12 @@ const Chatbot: React.FC = () => {
               type="text"
               value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
-              placeholder="Type your message..."
+              placeholder="Escribe tu mensaje..."
               className="flex-1 border border-gray-300 rounded-md px-4 py-2 lg:text-[26px] text-base focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
             <button
               onClick={handleSend}
-              className="ml-2 bg-gradient-to-r from-[#00A8E8] via-[#25516D] from-2% to-[#25516D] text-white px-10 py-2 rounded-md hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 lg:text-[26px]"
+              className="ml-2 bg-gradient-to-r from-[#00A8E8] via-[#25516D] from-2% to-[#25516D] text-white lg:px-10 px-5 py-2 rounded-md hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 lg:text-[26px]"
             >
               Enviar
             </button>
