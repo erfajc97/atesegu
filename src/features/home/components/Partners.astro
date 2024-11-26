@@ -2,23 +2,40 @@
 import { logosPartners } from "../data";
 ---
 
-<div class="lg:px-40 px-5 lg:py-14 py-5 mt-10">
+<div class="lg:px-40 px-5 lg:py-12 py-5 mt-10">
   <h2 class="lg:text-4xl text-2xl font-bold text-[#25516D]">
     Contamos con el respaldo de nuestros aliados
   </h2>
-  <div
-    class="flex flex-wrap items-center justify-between lg:mt-14 my-10 gap-y-5 -ml-3 px-5"
-  >
-    {
-      logosPartners.map((logo) => (
-        <img
-          class={`lg:w-[300px] lg:h-[80px] w-[150px] h-[40px] ${logo.alt === "Chubb" && "w-[150px] h-[40px] lg:w-[300px] lg:h-[60px]"}`}
-          src={logo.src}
-          alt={logo.alt}
-        />
-      ))
-    }
+  <div class="overflow-hidden">
+    <div
+      class="flex flex-row items-center justify-between lg:mt-14 my-10 lg:gap-10 gap-5 -ml-3 px-5 animate-infinite-scroll"
+    >
+      {
+        [...logosPartners, ...logosPartners].map((logo) => (
+          <img
+            class={`lg:w-[300px] lg:h-[80px] w-[150px] h-[40px] ${logo.alt === "Chubb" && "w-[150px] h-[40px] lg:w-[300px] lg:h-[50px]"}`}
+            src={logo.src}
+            alt={logo.alt}
+          />
+        ))
+      }
+    </div>
   </div>
+  <style>
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-infinite-scroll {
+      animation: scroll 20s linear infinite;
+      min-width: max-content;
+    }
+  </style>
   <h2 class="lg:text-4xl text-2xl font-bold text-[#25516D] lg:mt-28 mt-5">
     Acerca de Atesegu
   </h2>

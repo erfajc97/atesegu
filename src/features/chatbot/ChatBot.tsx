@@ -56,7 +56,7 @@ const Chatbot: React.FC = () => {
       {/* Botón flotante para abrir/cerrar el chat */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-5 right-5 bg-[#2475b8] lg:p-5 p-3 text-white w-20 h-20 lg:w-28 lg:h-28 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 z-50"
+        className="fixed bottom-5 right-5 bg-[#2475b8] lg:p-5 p-3 text-white w-20 h-20 lg:w-20 lg:h-20 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 z-50"
       >
         <svg
           id="Capa_1"
@@ -94,7 +94,7 @@ const Chatbot: React.FC = () => {
 
       {/* Contenedor del chat */}
       {isOpen && (
-        <div className="fixed bottom-28 lg:bottom-36 right-5 w-11/12 lg:w-[600px] lg:h-[700px]  h-[600px] bg-white shadow-lg rounded-lg flex flex-col border border-gray-300 z-30">
+        <div className="fixed bottom-28 lg:bottom-28 right-5 w-11/12 lg:w-[600px] lg:h-[600px]  h-[500px] bg-white shadow-lg rounded-lg flex flex-col border border-gray-300 z-30">
           {/* Encabezado del chat */}
           <div className="bg-gradient-to-r from-[#00A8E8] via-[#25516D] from-2% to-[#25516D] text-white justify-center p-4 font-bold text-center rounded-t-lg flex items-center">
             <img src="img-png/logowhite2.png" alt="" className="w-20 h-16" />
