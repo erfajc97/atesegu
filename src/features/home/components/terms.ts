@@ -1,51 +1,50 @@
 export const terms = [
   {
     id: 1,
-    question: "Auto Sustituto",
+    question: "Deducibles",
     answer:
-      "Recibirá un vehículo sustituto en lugar del suyo propio por un tiempo determinado una vez se tenga orden de reparación el vehículo asegurado",
+      "Es la participación del asegurado en la pedida ocasionado por algún siniestro.",
   },
   {
     id: 2,
     question: "Daños propios",
     answer:
-      "Para obtener una cotización personalizada, puedes contactarnos a través de nuestro formulario de contacto o llamar a nuestros asesores. Estarán encantados de ayudarte a encontrar la mejor opción de seguro para ti.",
+      "Son aquéllos que pueda sufrir el vehículo asegurado como consecuencia de un accidente con independencia de la voluntad del conductor, hallándose el vehículo tanto en circulación como en reposo.",
   },
   {
     id: 3,
-    question: "Daños a Terceros",
+    question: "Daños a terceros",
     answer:
-      "Nuestro servicio de emergencia 24/7 está disponible para ayudarte en cualquier momento. Llama a nuestro número de contacto y un miembro de nuestro equipo estará encantado de asistirte.",
+      "Cubre los daños causados a terceros ya sea en algún bien (auto, casa, barda, motocicleta etc.) o directamente los daños ocasionados a personas ajenas al vehículo asegurado, de igual manera esta cobertura considera los daños físicos de los ocupantes del vehículo de un tercero",
   },
   {
     id: 4,
-    question: "Deducibles",
+    question: "Auto sustituto",
     answer:
-      "El costo de tu seguro puede variar según varios factores, como tu edad, historial médico, tipo de seguro y cobertura deseada. Nuestros asesores te proporcionarán una cotización personalizada basada en tus necesidades específicas.",
+      "Recibirá un vehículo sustituto en lugar del suyo propio por un tiempo determinado una vez se tenga orden de reparación el vehículo asegurado",
   },
   {
     id: 5,
-    question: "Gastos médicos para el titular y ocupantes del vehículo",
-    answer:
-      "La activación de la cobertura de tu seguro dependerá de la complejidad del proceso y la documentación necesaria. Nuestros asesores te mantendrán informado sobre el progreso y cualquier paso adicional que necesites completar.",
+    question: "Servicio de grúa",
+    answer: "Coordinación, envío y pago de remolque en grúa.",
   },
   {
     id: 6,
-    question: "Asistencia vial",
+    question: "Gastos médicos para titular y ocupantes del vehículo",
     answer:
-      "Para presentar un reclamo, puedes contactarnos a través de nuestro formulario de contacto o llamar a nuestros asesores. Estarán encantados de guiarte a través del proceso y mantenerte informado sobre el progreso.",
+      "Cubrir gastos médicos a consecuencia de accidente de transito para los ocupantes del vehículo asegurado",
   },
   {
     id: 7,
-    question: "Asistencia legal",
+    question: "Asistencia vial",
     answer:
-      "Si decides cancelar tu seguro antes de que termine el plazo, deberás consultar con nuestro equipo para entender las condiciones y posibles penalizaciones aplicables.",
+      "Envío de combustible, cambio de neumático, carga de batería, apertura de vehículo cuando las llaves se quedan dentro del carro, coordinación de conductor profesional con el fin de manejar el vehículo del asegurado en caso de que el asegurado decida ingerir bebidas alcohólicas",
   },
   {
     id: 8,
-    question: "Servicio de grúa",
+    question: "Asistencia legal",
     answer:
-      "Ofrecemos varias opciones de pago, incluyendo tarjetas de crédito/débito, transferencias bancarias y pagos en efectivo. La frecuencia de pago puede variar según el tipo de seguro y la duración del plazo contratado.",
+      "Servicios de asistencia legal, a través de un abogado ya sea en el sitio del siniestro o vía telefónica",
   },
   {
     id: 9,
@@ -57,18 +56,18 @@ export const terms = [
     id: 10,
     question: "Desgravamen",
     answer:
-      "Sí, puedes ajustar la cobertura y agregar beneficiarios según tus necesidades. Nuestros asesores te guiarán a través del proceso y te proporcionarán opciones de modificación de cobertura.",
+      "Cubre la deuda con una entidad financiera en caso de fallecimiento o invalidez permanente del titular, cancelando el préstamo.",
   },
   {
     id: 11,
     question: "Seguro de asistencia médica",
     answer:
-      "Nuestros asesores están capacitados para evaluar tus necesidades específicas y recomendar el tipo de seguro más apropiado. También puedes consultar nuestra extensa variedad de productos y elegir el que mejor se adapte a tus necesidades.",
+      "Cobertura para atenciones hospitalarias hasta el 90% de los costos. Cobertura de atenciones medicas hasta el 80% de los costos. Cobertura en centros médicos y hospitales internacionales. Cobertura para examenes clínicos, de imágenes y diagnostico. Asistencia médica en viajes",
   },
   {
     id: 12,
-    question: "Accidentes personales - segmentos especiales",
+    question: "Seguro para accidentes personales",
     answer:
-      "ESCUELASASISTENTES A CONCIERTOSASISTENTES A FERIAS DEBIDAMENTE ORGANIZADASDEPORTES AFICIONADOS.",
+      "Aplica para: personal de empresas o negocios, guardias, gasolineras, contratistas, constructoras. Coberturas principales: cubre costos de gastos médicos en caso de lesiones corporales a consecuencia de accidentes. Pago de indemnizaciones por accidente que le ocurra mientras realiza su profesión o durante su vida privada. Cubre la muerte a causa de un accidente de modo indemnizatorio hasta el monto máximo asegurado",
   },
 ];
