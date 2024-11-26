@@ -10,13 +10,13 @@ const slides = [
 const CarouselServices = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setCurrentSlide((prev) => (prev + 1) % slides.length);
+  //   }, 5000);
 
-    return () => clearInterval(timer);
-  }, []);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   const handleNextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -55,7 +55,7 @@ const CarouselServices = () => {
                   ? imgsSlide2.titleBanner
                   : imgsSlide3.titleBanner}
               </h3>
-              <p className="lg:text-[28px] text-[12px] text-white mt-2 lg:mt-4">
+              <p className="lg:text-[28px] text-[11px] text-white mt-2 lg:mt-4">
                 {currentSlide === 0
                   ? imgsSlide1.descriptionBanner
                   : currentSlide === 1

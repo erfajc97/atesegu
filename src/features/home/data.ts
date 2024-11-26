@@ -105,7 +105,7 @@ export const imgsSlide3 = {
     {
       id: 2,
       img: "/img-png/monitoreodemercado.png",
-      title: "Monitoreo de Mercado",
+      title: "Monitoreo de Campañas",
     },
     {
       id: 3,
@@ -115,7 +115,7 @@ export const imgsSlide3 = {
     {
       id: 4,
       img: "/img-png/callcenterpropio.png",
-      title: "Call Center Propio nosotros nos encargamos",
+      title: "Call Center",
     },
     {
       id: 5,
