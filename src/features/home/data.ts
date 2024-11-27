@@ -180,55 +180,49 @@ export const logosPartners = [
     src: "/img-png/ecuasanitas.png",
     alt: "Ecuasanitas",
   },
-  
   {
-    "id": 6,
-    "src": "/img-png/ecuasanitas.png",
-    "alt": "Ecuasanitas"
+    id: 6,
+    src: "/img-png/bestdoctors.png",
+    alt: "Best Doctors"
   },
   {
-    "id": 7,
-    "src": "/img-png/bestdoctors.png",
-    "alt": "Best Doctors"
+    id: 7,
+    src: "/img-png/klipartz.png",
+    alt: "Klipartz"
   },
   {
-    "id": 8,
-    "src": "/img-png/klipartz.com-2.png",
-    "alt": "Klipartz"
+    id: 8,
+    src: "/img-png/humana.png",
+    alt: "Humana"
   },
   {
-    "id": 9,
-    "src": "/img-png/humana.png",
-    "alt": "Humana"
+    id: 9,
+    src: "/img-png/aig.png",
+    alt: "AIG"
   },
   {
-    "id": 10,
-    "src": "/img-png/aig.png",
-    "alt": "AIG"
+    id: 10,
+    src: "/img-png/saludsa.png",
+    alt: "Saludsa"
   },
   {
-    "id": 11,
-    "src": "/img-png/saludsa.png",
-    "alt": "Saludsa"
+    id: 11,
+    src: "/img-png/logoasiskeng.png",
+    al: "Logo Asisken"
   },
   {
-    "id": 12,
-    "src": "/img-png/logoasiskeng.png",
-    "alt": "Logo Asisken"
+    id: 12,
+    src: "/img-png/logos-bmi.png",
+    alt: "BMI Ecuador"
   },
   {
-    "id": 13,
-    "src": "/img-png/logos-bmi-ecuador-02.png",
-    "alt": "BMI Ecuador"
+    id: 13,
+    src: "/img-png/generali.png",
+    alt: "Generali"
   },
   {
-    "id": 14,
-    "src": "/img-png/generali.png",
-    "alt": "Generali"
-  },
-  {
-    "id": 15,
-    "src": "/img-png/seguros-pichincha.png",
-    "alt": "Seguros Pichincha"
+    id: 14,
+    src: "/img-png/seguros-pichincha.png",
+    alt: "Seguros Pichincha"
   }  
 ];
