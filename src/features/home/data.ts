@@ -175,4 +175,60 @@ export const logosPartners = [
     src: "/img-png/bupa.png",
     alt: "Bupa",
   },
+  {
+    id: 5,
+    src: "/img-png/ecuasanitas.png",
+    alt: "Ecuasanitas",
+  },
+  
+  {
+    "id": 6,
+    "src": "/img-png/ecuasanitas.png",
+    "alt": "Ecuasanitas"
+  },
+  {
+    "id": 7,
+    "src": "/img-png/bestdoctors.png",
+    "alt": "Best Doctors"
+  },
+  {
+    "id": 8,
+    "src": "/img-png/klipartz.com-2.png",
+    "alt": "Klipartz"
+  },
+  {
+    "id": 9,
+    "src": "/img-png/humana.png",
+    "alt": "Humana"
+  },
+  {
+    "id": 10,
+    "src": "/img-png/aig.png",
+    "alt": "AIG"
+  },
+  {
+    "id": 11,
+    "src": "/img-png/saludsa.png",
+    "alt": "Saludsa"
+  },
+  {
+    "id": 12,
+    "src": "/img-png/logoasiskeng.png",
+    "alt": "Logo Asisken"
+  },
+  {
+    "id": 13,
+    "src": "/img-png/logos-bmi-ecuador-02.png",
+    "alt": "BMI Ecuador"
+  },
+  {
+    "id": 14,
+    "src": "/img-png/generali.png",
+    "alt": "Generali"
+  },
+  {
+    "id": 15,
+    "src": "/img-png/seguros-pichincha.png",
+    "alt": "Seguros Pichincha"
+  }  
 ];
